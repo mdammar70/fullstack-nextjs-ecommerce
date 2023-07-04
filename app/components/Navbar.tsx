@@ -16,7 +16,9 @@ const Navbar = ({ user }: Session) => {
   const cartStore = useCartStore();
   return (
     <nav className="m-4 flex justify-between items-center py-4 px-5">
+      <Link href={"/"}>
       <h1 className="font-lobster text-3xl md:text-2xl">Andy's Store</h1>
+      </Link>
       <ul className="flex items-center gap-8">
         <li
           onClick={() => cartStore.toggleCart()}
